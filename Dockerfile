@@ -27,7 +27,5 @@ RUN wget https://sourceforge.net/projects/fastuniq/files/latest/download -O fast
  rm -rf fastuniq.tar.gz && \
  cd FastUniq/source && \
  make
- 
-RUN mv  FastUniq/source/fastuniq .
 
-ENV PATH ./:$PATH
+RUN mv  FastUniq/source/fastuniq /usr/bin
